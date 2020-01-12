@@ -1,1 +1,62 @@
 My Commands for basic_repo
+
+ewsmv@WadesOffice-DT MINGW64 ~/Desktop/basic_rep0/basic_repo (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+ewsmv@WadesOffice-DT MINGW64 ~/Desktop/basic_rep0/basic_repo (master)
+$ touch index.html
+
+ewsmv@WadesOffice-DT MINGW64 ~/Desktop/basic_rep0/basic_repo (master)
+$ touch commands.txt
+
+ewsmv@WadesOffice-DT MINGW64 ~/Desktop/basic_rep0/basic_repo (master)
+$ echo "My Commands for basic_repo" >> commands.txt
+
+ewsmv@WadesOffice-DT MINGW64 ~/Desktop/basic_rep0/basic_repo (master)
+$ dir
+commands.txt  index.html  README.md
+
+ewsmv@WadesOffice-DT MINGW64 ~/Desktop/basic_rep0/basic_repo (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        commands.txt
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ewsmv@WadesOffice-DT MINGW64 ~/Desktop/basic_rep0/basic_repo (master)
+$ git add .
+warning: LF will be replaced by CRLF in commands.txt.
+The file will have its original line endings in your working directory
+
+ewsmv@WadesOffice-DT MINGW64 ~/Desktop/basic_rep0/basic_repo (master)
+$ git add --all
+
+ewsmv@WadesOffice-DT MINGW64 ~/Desktop/basic_rep0/basic_repo (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   commands.txt
+        new file:   index.html
+
+
+ewsmv@WadesOffice-DT MINGW64 ~/Desktop/basic_rep0/basic_repo (master)
+$ git commit -m all
+[master 3394309] all
+ 2 files changed, 1 insertion(+)
+ create mode 100644 commands.txt
+ create mode 100644 index.html
+
+ewsmv@WadesOffice-DT MINGW64 ~/Desktop/basic_rep0/basic_repo (master)
+$
